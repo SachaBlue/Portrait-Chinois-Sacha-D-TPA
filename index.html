@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <div id="header">
+    Mon Portrait Chinois
+  </div>
+  
+    <main class="liste-analogies">
+    </main>
+
+<div id="form-container">
+    <h2>PROPOSER UN THÈME</h2>
+    <form id="themeForm">
+      <label for="email">Mail*</label>
+      <input type="email" id="email" placeholder="mail@exemple.com" required>
+      <p>Veuillez saisir votre adresse e-mail.</p>
+
+      <label for="analogie">Si j'étais*</label>
+      <input type="text" id="analogie" placeholder="Ex : Un animal" required>
+      <p>Veuillez saisir une analogie.</p>
+
+      <label for="valeurAnalogie">Je serais*</label>
+      <input type="text" id="valeurAnalogie" placeholder="Ex : Un lion" required>
+      <p>Veuillez saisir une valeur analogie.</p>
+
+      <label for="imageURL">Image*</label>
+      <input type="url" id="imageURL" placeholder="Veuillez fournir l'URL de l'image" required>
+
+      <label for="reason">Pourquoi ?*</label>
+      <textarea id="reason" placeholder="Parce que" required></textarea>
+      <p>Veuillez expliquer pourquoi vous avez choisi ce thème.</p>
+
+      <p>Les champs marqués d'un * sont obligatoires.</p>
+      <button type="button" onclick="submitForm()">Soumettre</button>
+    </form>
+  </div>
+
+<script src="data.js/data.js"> </script>
+<script src="data.js/script.js"> </script>
+
+
+  <script>
+    function submitForm() {
+      
+      var email = document.getElementById('email').value;
+      var analogie = document.getElementById('analogie').value;
+      var valeurAnalogie = document.getElementById('valeurAnalogie').value;
+      var imageURL = document.getElementById('imageURL').value;
+      var reason = document.getElementById('reason').value;
+
+      if (email && analogie && valeurAnalogie && imageURL && reason) {
+       
+        alert('Formulaire soumis avec succès!');
+      } else {
+        alert('Veuillez remplir tous les champs obligatoires.');
+      }
+    }
+  </script>
+
+ <style>
+  #credit-content {
+    display: none;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+</style>
+
+<button onclick="toggleCredit()">Crédit</button>
+<div id="credit-content">
+  <h2>ÉDITEUR</h2>
+  <p>Sacha Doukhan, étudiant de l’Université Gustave Eiffel</p>
+  <p>Hébergeur : Université Gustave Eiffel</p>
+
+  <h2>SOURCES</h2>
+  <ul>
+    <li><a href="https://www.stocklib.fr/media-149271064/gradient-background-blue-sky-ice-ink-blur-smooth-soft-wallpaper-abstract-with-copy-space.html">IMAGE 1</a></li>
+    <li><a href="https://puzzlefactory.com/fr/puzzle-paysage/328976-paysage-japonais-puzzle#3x2">IMAGE 2</a></li>
+    <li><a href="https://depositphotos.com/fr/photo/english-garden-6603793.html">IMAGE 3</a></li>
+    <li><a href="https://www.istockphoto.com/fr/photo/jeune-homme-amical-vlogging-gm1213200051-352476787?phrase=youtuber&searchscope=image%2Cfilm">IMAGE 4</a></li>
+    <li><a href="https://larepublica.pe/cine-series/2022/04/15/better-call-saul-una-serie-infravalorada-que-merece-reconocimiento-en-vida-saul-goodman-jimmy-mcgill-bob-odenkirk">IMAGE 5</a></li>
+    <li><a href="https://fr.wikipedia.org/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild">IMAGE 6</a></li>
+    <li><a href="https://www.7jours.ca/2022/08/11/keanu-reeves-a-chicago">IMAGE 7</a></li>
+  </ul>
+
+  <p>Toutes les images utilisées sur cette page sont libres de droit pour usage personnel, et ne feront jamais l'objet d'une commercialisation.</p>
+
+  <h2>LÉGISLATION RELATIVE AUX DONNÉES À CARACTÈRE PERSONNEL</h2>
+  <p>Le formulaire permettant la création d’une analogie personnalisée recueille votre adresse de courriel et votre adresse IP. Pour toute question portant sur la collecte ou le traitement de vos données à caractère personnel par l’UPEM, vous pouvez saisir la personne responsable du traitement des données qui est : Philippe Gambette (philippe.gambette@univ-eiffel.fr). Les fichiers détenus par l'UPEM qui comportent des données à caractère personnel ne seront jamais transmis à des tiers et ne feront jamais l'objet d'une commercialisation.</p>
+
+  <p>©2023 Tous droits réservés par Sacha Doukhan.</p>
+</div>
+
+<script>
+  function toggleCredit() {
+    var creditContent = document.getElementById('credit-content');
+    creditContent.style.display = (creditContent.style.display === 'none' || creditContent.style.display === '') ? 'block' : 'none';
+  }
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    var sections = document.querySelectorAll("section");
+
+
+    sections.forEach(function (section) {
+      section.addEventListener("mouseover", function () {
+
+        this.style.opacity = 0.9;
+      });
+
+      section.addEventListener("mouseout", function () {
+     
+        this.style.opacity = 1;
+      });
+    });
+  });
+</script>
+
+<style>
+  .submitted-section {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-top: 20px;
+  }
+  .submitted-section img {
+      max-width: 100%;
+      height: auto;
+  }
+</style>
+</head>
+<body>
+
+
+  
+  <div id="response-container"></div>
+  
+  <script>
+    function submitForm() {
+      var email = document.getElementById('email').value;
+      var analogie = document.getElementById('analogie').value;
+      var valeurAnalogie = document.getElementById('valeurAnalogie').value;
+      var imageURL = document.getElementById('imageURL').value;
+      var reason = document.getElementById('reason').value;
+  
+      if (email && analogie && valeurAnalogie && imageURL && reason) {
+
+        var responseContainer = document.getElementById('response-container');
+        var newSection = document.createElement('div');
+        newSection.className = 'response-section';
+        newSection.innerHTML = `
+          <h3>Réponse du formulaire :</h3>
+          <p><strong>Si j'étais :</strong> ${analogie}</p>
+          <p><strong>Je serais :</strong> ${valeurAnalogie}</p>
+          <p><strong>Pourquoi :</strong> ${reason}</p>
+          <img src="${imageURL}" alt="Image">
+        `;
+  
+     
+        responseContainer.appendChild(newSection);
+
+        document.getElementById('themeForm').reset();
+      }
+    }
+  </script>
+
+</body>
+</html>

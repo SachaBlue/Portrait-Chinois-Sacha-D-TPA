@@ -1,0 +1,196 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://img.freepik.com/free-vector/gold-vector-chinese-art-pattern-transparent-background-seamless_53876-114015.jpg');
+  height: 100vh;
+  margin: 0;
+  background-size:contain;
+      background-repeat:repeat;
+}
+
+section {
+  width: 80%;
+  height: 75vh;
+  margin: 5rem auto;
+  background-color: rgb(219, 117, 185);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    border-radius: 8px;
+}
+
+#couleur {
+  background-color: aqua;
+  border-radius: 8px;
+}
+
+#endroit {
+  background-color: rgb(39, 88, 39);
+  border-radius: 8px;
+}
+
+#loisir {
+  background-color: rgb(66, 64, 64);
+  border-radius: 8px;
+}
+
+#série {
+  background-color: rgb(201, 204, 25);
+  border-radius: 8px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: #b91414; 
+  color: #fff; 
+  text-align: center;
+  padding: 20px;
+  font-size: 24px; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+#jeuVidéo {
+  background-color: rgb(24, 60, 180);
+  font-size: 1.75rem;
+  border-radius: 8px;
+}
+
+#acteur {
+  background-color: rgb(158, 82, 11);
+  border-radius: 8px;
+}
+
+.container {
+  width: 100%;
+  height: 80vh;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texte {
+  width: 100%;
+}
+
+.si-jetais, .je-serais {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+.description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.image {
+  width: 50%;
+  margin-left: 2rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('your-background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur (2px);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#form-container {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+#form-container h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  padding: 10px;
+  background-color: #bb1010;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #bd1f14;
+  
+}
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+#form-container {
+  max-width: 1400px;
+  margin: 60px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#response-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  max-width: 1900px;
+}
+
+
+
+
+
+
+
